@@ -26,7 +26,7 @@ if [ `uname -m`  ==  "aarch64" ]; then
         tar -xf stack.tar.gz -C /usr/local/bin --strip-components=1
         /usr/local/bin/stack config set system-ghc --global true
         /usr/local/bin/stack config set install-ghc --global false
-        rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz
+        rm -rf "$GNUPGHOME" /var/lib/apt/lists/* /stack.tar.gz.asc /stack.tar.gz;
 else
-       echo "This is not aarch64"
+       echo "This is not aarch64";
 fi
