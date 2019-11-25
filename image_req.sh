@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-if [ `uname -m`  ==  "aarch64" ]; then
+if [ `uname -m`  ==  "aarch64" ] then
         apt-get update
         apt-get install -y --no-install-recommends gnupg ca-certificates dirmngr curl git wget
         #echo 'deb http://downloads.haskell.org/debian stretch main' > /etc/apt/sources.list.d/ghc.list && \
